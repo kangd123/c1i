@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Injae</title>
+<style>
+  body {
+    margin: 0;
+    font-family: fantasy,Copperplate;
+    background-color: #f0f0f0; 
+  }
+
+  header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    color: white; 
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .gallery {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Injae</h1>
+
+<div class="gallery">
+  <img src="1.JPG" alt="pic1" />
+  <img src="2.JPG" alt="pic2" />
+  <img src="3.JPG" alt="pic3" />
+  <img src="4.JPG" alt="pic4" />
+  <img src="5.JPG" alt="pic5" />
+</div>
+
+</body>
+</html>
