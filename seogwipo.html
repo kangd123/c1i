@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Seogwipo</title>
+<style>
+  body {
+    margin: 0;
+    font-family: fantasy,Copperplate;
+    background-color: #f0f0f0; 
+  }
+
+  header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    color: white; 
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .gallery {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Seogwipo</h1>
+
+<div class="gallery">
+  <img src="S1.jpg" alt="pic1" />
+  <img src="S2.JPG" alt="pic2" />
+  <img src="S3.jpg" alt="pic3" />
+  <img src="S4.jpg" alt="pic4" />
+</div>
+
+</body>
+</html>
