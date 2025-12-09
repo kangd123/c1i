@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busan</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray; 
+            font-family: Arial, sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            color: red; 
+            text-align: center;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(57, 57, 57, 0.8); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        .emoji {
+            font-size: 72px; 
+        }
+        .alert-text {
+            transition: color 0.3s; 
+        }
+        .alert-text:hover {
+            color: yellow; 
+        }
+    </style>
+</head>
+<body onload="showAlert()">
+
+    <div class="overlay" id="alertOverlay" style="display:none;">
+        <div class="emoji">🚨🚨🚨</div> 
+        <div class="alert-text">Sorry. Never been to Busan</div> 
+        <div class="emoji">🚨🚨🚨</div> 
+    </div>
+
+    <script>
+        function showAlert() {
+            document.getElementById('alertOverlay').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
